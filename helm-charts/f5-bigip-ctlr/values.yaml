@@ -25,12 +25,12 @@ args:
   # NOTE: helm has difficulty with values using `-`; `_` are used for naming
   # and are replaced with `-` during rendering.
   # REQUIRED Params
-  bigip_url: ~
+  bigip_url: 10.45.151.7
   bigip_partition: f5-bigip-ctlr
   # OPTIONAL PARAMS -- uncomment and provide values for those you wish to use.
   # verify_interval:
   # node-poll_interval:
-  # log_level:
+  log_level: debug
   # python_basedir: ~
   # VXLAN
   # openshift_sdn_name:
@@ -41,13 +41,13 @@ args:
   # namespaces: ["foo", "bar"]
   # namespace_label:
   # node_label_selector:
-  # pool_member_type:
+  pool_member_type: cluster
   # resolve_ingress_names:
   # running_in_cluster:
   # use_node_internal:
   # use_secrets:
-  # insecure: true
-  # custom-resource-mode: true
+  insecure: true
+  custom-resource-mode: true
   # log-as3-response: true
   # gtm-bigip-password
   # gtm-bigip-url
